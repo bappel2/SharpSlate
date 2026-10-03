@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /selftest/
+
+Sitemap: https://sharpslatesports.com/sitemap.xml
