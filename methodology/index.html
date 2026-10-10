@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How SharpSlate Works: Fair Odds, Hit Rates and Projections</title>
+<meta name="description" content="How SharpSlate turns sportsbook prices into fair odds, and where the hit rates, projections and defense ranks come from.">
+<link rel="canonical" href="https://sharpslatesports.com/methodology/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SharpSlate">
+<meta property="og:title" content="How SharpSlate Works: Fair Odds, Hit Rates and Projections">
+<meta property="og:description" content="How SharpSlate turns sportsbook prices into fair odds, and where the hit rates, projections and defense ranks come from.">
+<meta property="og:url" content="https://sharpslatesports.com/methodology/">
+<meta property="og:image" content="https://sharpslatesports.com/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How SharpSlate Works: Fair Odds, Hit Rates and Projections">
+<meta name="twitter:description" content="How SharpSlate turns sportsbook prices into fair odds, and where the hit rates, projections and defense ranks come from.">
+<meta name="twitter:image" content="https://sharpslatesports.com/og.png">
+<meta name="theme-color" content="#0b0b0c">
+<link rel="icon" type="image/png" href="../assets/7ee3147b07/img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=Saira+Semi+Condensed:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="../assets/7ee3147b07/css/site.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "item": "https://sharpslatesports.com/", "name": "SharpSlate", "position": 1}, {"@type": "ListItem", "item": "https://sharpslatesports.com/methodology/", "name": "How these numbers work", "position": 2}]}</script>
+</head>
+<body data-sport="" data-section="methodology" data-root="../" data-updated="2026-10-10T16:31:35Z">
+<a class="skip-link" href="#main">Skip to content</a>
+<script id="manifest-data" type="application/json">{"order": {"sections": ["prop-lab", "prop-finder", "dfs", "research", "tools"], "sports": ["mlb", "nfl", "nba", "cfb"]}, "site": "SharpSlate", "sports": {"cfb": {"dfs": {"from_props": 137, "label": "Sat Oct 10 \u00b7 12 games", "players": 764, "projected": 418, "status": "live"}, "prop-finder": {"status": "live"}, "prop-lab": {"label": "Sat Oct 10 \u00b7 46 games", "players": 955, "props": 1538, "status": "live"}, "research": {"label": "2026 season", "status": "live"}, "tools": {"status": "live"}}, "mlb": {"dfs": {"status": "coming"}, "prop-finder": {"status": "coming"}, "prop-lab": {"status": "coming"}, "research": {"status": "coming"}, "tools": {"label": "Calculators", "status": "live"}}, "nba": {"dfs": {"status": "coming"}, "prop-finder": {"status": "coming"}, "prop-lab": {"status": "coming"}, "research": {"status": "coming"}, "tools": {"label": "Calculators", "status": "live"}}, "nfl": {"dfs": {"fd": {"matched": 316, "players": 493, "source": "full week list", "status": "live", "unmatched": 155}, "label": "Week 5 \u00b7 Sun Oct 11 \u00b7 11 games", "players": 488, "projected": 335, "status": "live"}, "prop-finder": {"status": "live"}, "prop-lab": {"label": "Week 5 \u00b7 Sun Oct 11 to Mon Oct 12 \u00b7 14 games", "players": 372, "props": 869, "status": "live"}, "research": {"label": "2026 season", "status": "live"}, "tools": {"status": "live"}}}, "updated": "2026-10-10T16:31:35Z"}</script>
+<script id="sports-data" type="application/json">[{"key": "mlb", "label": "MLB", "name": "Baseball"}, {"key": "nfl", "label": "NFL", "name": "Pro football"}, {"key": "nba", "label": "NBA", "name": "Basketball"}, {"key": "cfb", "label": "CFB", "name": "College football"}]</script>
+<script id="sections-data" type="application/json">[{"key": "prop-lab", "label": "Prop Lab"}, {"key": "prop-finder", "label": "Prop Finder"}, {"key": "dfs", "label": "DFS"}, {"key": "research", "label": "Research"}, {"key": "tools", "label": "Tools"}]</script>
+<script id="coming-data" type="application/json">{"cfb": "College football is being added.", "mlb": "MLB pages return for the 2027 season.", "nba": "NBA opening night is October 20.", "nfl": "This NFL section is being added."}</script>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="wordmark" href="../index.html" aria-label="SharpSlate home">
+      <img class="wordmark-mark" src="../assets/7ee3147b07/img/logo-mark.png" alt="" width="128" height="128">
+      <img class="wordmark-word" src="../assets/7ee3147b07/img/logo-word.png" alt="SharpSlate" width="685" height="96">
+    </a>
+    <nav class="sport-nav" aria-label="Sports and leagues">
+      <a class="sport-pill" href="../mlb/prop-lab/">
+        <span class="sport-dot sport-dot--mlb" aria-hidden="true"></span>MLB
+      </a>
+      <a class="sport-pill" href="../nfl/prop-lab/">
+        <span class="sport-dot sport-dot--nfl" aria-hidden="true"></span>NFL
+      </a>
+      <a class="sport-pill" href="../nba/prop-lab/">
+        <span class="sport-dot sport-dot--nba" aria-hidden="true"></span>NBA
+      </a>
+      <a class="sport-pill" href="../cfb/prop-lab/">
+        <span class="sport-dot sport-dot--cfb" aria-hidden="true"></span>CFB
+      </a>
+      
+      <a class="sport-pill sport-pill--leagues" href="https://leagues.sharpslatesports.com/" target="_blank" rel="noopener" aria-label="Leagues, opens in a new tab">Leagues</a>
+    </nav>
+    <div class="header-right">
+      <span class="updated-stamp" id="updated-stamp"><span class="dot-live" aria-hidden="true"></span>Updated &hellip;</span>
+    </div>
+  </div>
+</header>
+
+
+
+<main id="main" class="wrap main" tabindex="-1">
+<div id="app" data-state="ready"><div class="method">
+    <div class="method-head">
+      <h1 class="method-h1">How these numbers work</h1>
+      <p class="method-lede">SharpSlate shows what sportsbooks are charging, what that implies once their cut is removed, and how each player has done against the same lines. This page explains where every number comes from.</p>
+    </div>
+    <div class="method-layout">
+      <article class="method-article">
+        
+        <section class="method-section" id="fair" aria-labelledby="fair-h">
+          <h2 id="fair-h" class="method-h2">Fair odds</h2>
+          <p>A sportsbook&#39;s two prices for a prop, the over and the under, add up to more than 100 percent. The extra is the hold, the book&#39;s built in margin. To see what the market itself thinks, we take the hold out.</p>
+          <p>For every book that posts both sides of a prop at the same line, we turn each price into a chance and scale the pair so it adds to exactly 100 percent. Then we average that across the books quoting the most common line for the prop. If two lines are quoted equally often, we use the lower one. The result is the fair chance, and we print it as American odds so it reads like a price.</p>
+          <p>A book that posts only one side is left out of the fair number, because there is nothing to take its hold out of.</p>
+          <p>College football lines are scattered. Books often post passing, rushing or receiving yards a yard or two apart, so no single line may have enough books behind it. When that happens we move each book&#39;s fair chance to the middle line along a bell curve sized to how far real college results land from these lines, then average them, so the count on the page can include books that posted a nearby line. Receptions, touchdowns and interceptions sit on the same half point lines at every book, so they keep the most quoted line rule.</p>
+          <p>Fair odds are the market&#39;s own number with its margin removed. They are not a forecast of the game.</p>
+          
+          
+          <figure class="method-example">
+            <figcaption class="method-example-title">A worked example</figcaption>
+            <div class="table-scroll"><table class="data-table">
+              <thead><tr><th scope="col" class=""><span class="visually-hidden">Step</span></th><th scope="col" class="num">Over</th><th scope="col" class="num">Under</th><th scope="col" class="num">Together</th></tr></thead>
+              <tbody><tr><th scope="row">Book&#39;s price</th><td class="num">-120</td><td class="num">+100</td><td class="num"></td></tr>
+              <tr><th scope="row">Chance the price implies</th><td class="num">54.5%</td><td class="num">50.0%</td><td class="num">104.5%</td></tr>
+              <tr><th scope="row">Fair chance, hold removed</th><td class="num">52.2%</td><td class="num">47.8%</td><td class="num">100.0%</td></tr>
+              <tr><th scope="row">Fair odds</th><td class="num">-109</td><td class="num">+109</td><td class="num"></td></tr>
+              </tbody>
+            </table></div>
+            <p class="method-example-note">The two prices add to 104.5%. The 4.5% over 100% is the hold. Scaling both chances down so they add to 100% gives the fair numbers.</p>
+          </figure>
+          
+          
+        </section>
+        
+        <section class="method-section" id="best" aria-labelledby="best-h">
+          <h2 id="best-h" class="method-h2">Best price</h2>
+          <p>Next to the fair odds we show the best price any book we check posts for each side, at the same line as the fair number, along with the book posting it. When several books tie for the best price, the Prop Lab names up to two and counts the rest, as in FanDuel and 2 more.</p>
+          <p>Best prices are read when the lines are pulled, so they can be out of date by the time you look. Prices move, so confirm the number at the book before you place anything. Once a game kicks off, its best prices leave the page, because nobody can take them anymore.</p>
+          <p>We show one price per side and the book that posts it, never every book&#39;s full board. A best price is not marked against the fair odds, and it does not say anything is priced wrong. It is a price and a book.</p>
+          
+          
+          
+        </section>
+        
+        <section class="method-section" id="few" aria-labelledby="few-h">
+          <h2 id="few-h" class="method-h2">Props with too few books</h2>
+          <p>A fair number needs at least two books pricing both sides of a prop (three books for anytime touchdown). Until then the prop shows its best price only and no fair odds, because one book&#39;s price with its hold removed is just that book&#39;s own opinion.</p>
+          <p>A pair of prices with a hold wider than 15 percent gets extra care. Sportsbooks do not price that wide. It usually means an exchange is pairing its best over and best under from different levels of its order book. When such a pair is the only one on a prop, nothing shows for it. On college props it never enters the fair number at all.</p>
+          <p>The table on the home page lists only props with a full fair number, one per player, priced by at least five books. It ranks them by our projection, so the headline players come first, and shows no more than two players from one game. When fewer than ten props qualify, it lowers the bar to two books.</p>
+          
+          
+          
+        </section>
+        
+        <section class="method-section" id="touchdown" aria-labelledby="touchdown-h">
+          <h2 id="touchdown-h" class="method-h2">Anytime touchdown</h2>
+          <p>Books post anytime touchdown props one way. There is a price for yes and none for no, so there is nothing to take the hold out of.</p>
+          <p>The number on the page is the average of the books&#39; own yes prices, turned into a chance, with their cut still in it, and we show it only when at least three books post it. It runs higher than the true chance, and the page labels it as the books&#39; average, not as a fair number.</p>
+          
+          
+          
+        </section>
+        
+        <section class="method-section" id="logs" aria-labelledby="logs-h">
+          <h2 id="logs-h" class="method-h2">Hit rates and game logs</h2>
+          <p>A hit rate such as 7/10 counts how many of a player&#39;s last ten games finished over the posted line. It is history. It does not adjust for who he faces this week, and early in a season the window reaches back into last year.</p>
+          <p>NFL logs come from nflverse. College logs come from ESPN&#39;s box scores for this season and last, and they include games against lower division schools. A transfer&#39;s games from last season were with his old school. College stats count sacks as runs, so a quarterback&#39;s carries and rushing yards include his sacks.</p>
+          <p>Early in a season a window rests on a few games, so a hit rate or a defense&#39;s rank can swing on one game.</p>
+          
+          
+          
+        </section>
+        
+        <section class="method-section" id="finder" aria-labelledby="finder-h">
+          <h2 id="finder-h" class="method-h2">Prop Finder</h2>
+          <p>The Prop Finder lists every prop on the slate in one table, one row per player, prop and side, and the filters narrow it. It reads the same data as the Prop Lab and runs the same hit rate, window and defense numbers. For an over, a row&#39;s hit rate is the rate on that player&#39;s Prop Lab tile. For an under, it is the games that finished under the line, so a push counts for neither side. Select a row to open his Prop Lab card in a new tab, at that prop, window and split, so the filtered list stays as it was.</p>
+          <p>A row sets history beside the market. A hit rate counts the games in a window that finished over the line for an over, under it for an under, and with a score for a yes prop. A game that lands exactly on a whole number line counts for neither side, but it still counts as a game played. The windows are the last 5, 10 and 20 games, this season, and every game against today&#39;s opponent. Best price and fair odds are the numbers the Prop Lab shows. A yes only prop, such as an anytime touchdown, has no second side to take the books&#39; cut out of, so its fair odds column shows the books&#39; average with their cut included, marked Books&#39; avg, and a sort by fair odds keeps those rows apart, after the rest. The Finder never sets a price against the fair odds, and no filter or sort does.</p>
+          <p>The hit rate filter takes a window, a minimum percent and a minimum number of games in that window, so one game cannot read as 100 percent. The minimum number of games applies once a minimum percent is set. Until you set it, the minimum is five games for the last 10 and 20, three for the last 5 and for a season, and two against today&#39;s opponent. In a sort by hit rate, a rate over fewer games than the minimum sits below the rest. The split narrows every hit rate and average to home or away games before the window is cut, so the last 10 at home means the last 10 home games.</p>
+          <p>Opponent defense is the Prop Lab&#39;s rank for the stat behind the prop, for the player&#39;s position, in the last 10 games, or in the season chosen. Soft means that defense makes the side in the row easier to reach, and tough means harder, so it flips with the side. A defense that allows the most receiving yards is soft for an over and tough for an under. For interceptions it runs the other way, because a defense that forces many is soft for an interceptions over. A middle rank reads as neutral.</p>
+          <p>The best price filter reads American odds by payout, so a range of -200 to +250 holds -110 and +100 but not -300. Games that have started are hidden by default, because their best prices leave the page at kickoff. Every filter and the sort are kept in the page&#39;s address, so a search can be shared. The table draws 100 rows at a time and a button shows more.</p>
+          
+          
+          
+        </section>
+        
+        <section class="method-section" id="projections" aria-labelledby="projections-h">
+          <h2 id="projections-h" class="method-h2">Our projections</h2>
+          <p>Our projections are averages built from each player&#39;s past games. Yardage finishes are lopsided: a few big games pull the average up while most games land below it. A receiver projected for 60 yards clears 60 less than half the time, so read a projection as the middle of a wide range.</p>
+          <p>Our own chances for these lines stay off the site until they have been graded against real results.</p>
+          <p>Our college projections are newer. They split each team&#39;s expected volume, taken from the game&#39;s spread and total, by each player&#39;s recent share of it. Treat them as a first read. They cover DraftKings&#39; main slate only.</p>
+          <p>On the college DFS page, a player with prop lines is projected from those lines instead. The fair chance of each over becomes an expected stat line, scored the DraftKings way, with a fit to last season&#39;s results. In our tests on last season&#39;s games, lineups built from these numbers scored more than lineups built from the volume projection. A player with no lines keeps the volume projection, cut to match how such players scored last season, since many of them barely play. When fewer than nine players in his game have lines, his projection stands as is.</p>
+          <p>DFS salaries and rules are DraftKings&#39; own. The lineup builder runs in your browser, on those salaries and our projections.</p>
+          <p>FanDuel salaries come from FanDuel&#39;s own player list, and FanDuel points use FanDuel&#39;s scoring on the same projections: a reception is worth 0.5 points and a lost fumble costs 2. A lineup there has a $60,000 cap and at most four players from one team. A FanDuel player is matched to our projections by name within his team and position, and a name that does not match exactly one projection gets none.</p>
+          <p>We tested adjusting our NFL projections for the defense a player faces, and it did not improve them, so they do not adjust for the opponent. The defense numbers describe what happened: what each defense allowed per game to players at a position, ranked against every other defense. They are shaped by the schedule a team has played, and early in a season they rest on a couple of games.</p>
+          
+          
+          
+        </section>
+        
+        <section class="method-section" id="timing" aria-labelledby="timing-h">
+          <h2 id="timing-h" class="method-h2">Data and timing</h2>
+          <p>Lines are pulled on a schedule, not live. NFL lines are pulled on a set schedule through the week, with the most pulls on Sunday. College football lines are pulled Wednesday through Saturday. The site is rebuilt about every half hour.</p>
+          <p>Updated, in the header, is when the site was last rebuilt. Lines as of, on the Prop Lab, is when the prices were pulled, and it can be older.</p>
+          <p>Sources: NFL stats and schedules from nflverse. College box scores from ESPN. Team logos from ESPN. Player photos from ESPN and the NFL. Salaries from DraftKings and FanDuel. Lines from The Odds API.</p>
+          
+          
+          
+          <p class="method-now"><span class="method-now-label">Right now</span><span class="method-now-item">NFL lines as of Sat 9:45 AM ET</span><span class="method-now-item">CFB lines as of Sat 9:00 AM ET</span></p>
+          
+        </section>
+        
+        <section class="method-section" id="research" aria-labelledby="research-h">
+          <h2 id="research-h" class="method-h2">Research, not picks</h2>
+          <p>SharpSlate does not make picks. Nothing here tells you to take an over or an under, ranks a bet, or says a price is wrong. Mainline sides, totals and props are efficient markets, so the job of a fair number is to be an accurate read of the market, not to beat it.</p>
+          <p>The numbers are here so you can see the market clearly and check a player&#39;s history against it. What you do with them is your call.</p>
+          
+          
+          
+        </section>
+        
+        <p class="method-back"><a class="home-link" href="../index.html">Back to the slate</a></p>
+      </article>
+      <nav class="method-toc" aria-label="On this page">
+        <p class="method-toc-title">On this page</p>
+        <ol role="list"><li><a href="#fair">Fair odds</a></li><li><a href="#best">Best price</a></li><li><a href="#few">Props with too few books</a></li><li><a href="#touchdown">Anytime touchdown</a></li><li><a href="#logs">Hit rates and game logs</a></li><li><a href="#finder">Prop Finder</a></li><li><a href="#projections">Our projections</a></li><li><a href="#timing">Data and timing</a></li><li><a href="#research">Research, not picks</a></li></ol>
+      </nav>
+    </div>
+  </div></div>
+
+</main>
+
+
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>SharpSlate is research, not picks. Projections, probabilities and fair odds only.</p>
+    <p class="foot-sources" id="footer-sources"></p>
+    <p class="foot-links"><a href="../index.html">Home</a> <a href="../methodology/">How these numbers work</a> <a href="mailto:info@sharpslatesports.com">Contact: info@sharpslatesports.com</a></p>
+  </div>
+</footer>
+
+
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "732c89ddee16486b938cbe6b7acf54f5"}'></script>
+<script type="module" src="../assets/7ee3147b07/js/pages/methodology.js"></script>
+</body>
+</html>
