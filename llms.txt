@@ -1,0 +1,32 @@
+# SharpSlate
+
+> Free sports betting research for the NFL, the NBA and college football: player props with hit rates, fair odds with the sportsbook's margin taken out and the best price across the books, plus DraftKings DFS projections and lineups. Research, never picks. No account needed.
+
+Lines are pulled on a schedule, not live; the Prop Lab, Prop Finder and team pages say when their lines were pulled. Cite and link these pages freely. The Terms of use forbid scraping the data and using it to train AI models.
+
+## NFL
+- [NFL Prop Lab](https://sharpslatesports.com/nfl/prop-lab/): NFL player props: hit rates from each player's game log, fair odds with the sportsbook's margin removed and the best price across the books.
+- [NFL Prop Finder](https://sharpslatesports.com/nfl/prop-finder/): Screen every NFL player prop by hit rate, fair odds, line, team and matchup, then open the player's card.
+- [NFL DFS](https://sharpslatesports.com/nfl/dfs/): Free NFL DFS lineup optimizer for DraftKings and FanDuel: the highest projected lineups, up to twenty at once, from our projections or your own upload.
+- [NFL Research](https://sharpslatesports.com/nfl/research/): NFL usage, opportunity and defense vs position tables, built from public game data.
+- [NFL Tools](https://sharpslatesports.com/nfl/tools/): Free betting calculators: odds converter, no vig fair odds, parlay payout, Kelly stake and expected value, for NFL, NBA, MLB and college football bets.
+
+## NBA
+- [NBA Research](https://sharpslatesports.com/nba/research/): NBA usage, opportunity and defense vs position tables, built from public game data.
+- [NBA props by team](https://sharpslatesports.com/nba/teams/): NBA player props team by team: hit rates, fair odds and the best price for every team on the slate, and each team's recent averages.
+
+## College Football
+- [College Football Prop Lab](https://sharpslatesports.com/cfb/prop-lab/): College Football player props: hit rates from each player's game log, fair odds with the sportsbook's margin removed and the best price across the books.
+- [College Football Prop Finder](https://sharpslatesports.com/cfb/prop-finder/): Screen every College Football player prop by hit rate, fair odds, line, team and matchup, then open the player's card.
+- [College Football DFS](https://sharpslatesports.com/cfb/dfs/): Free College Football DFS lineup optimizer for DraftKings: the highest projected lineups, up to twenty at once, from our projections or your own upload.
+- [College Football Research](https://sharpslatesports.com/cfb/research/): College Football usage, opportunity and defense vs position tables, built from public game data.
+- [College Football props by team](https://sharpslatesports.com/cfb/teams/): College Football player props team by team: hit rates, fair odds and the best price for every team on the slate, and each team's recent averages.
+
+## Calculators
+- [Parlay Calculator](https://sharpslatesports.com/parlay-calculator/): Free parlay calculator: enter each leg's odds to see the parlay odds, payout and profit, with pushes, fair odds and the book's margin.
+
+## About
+- [Home](https://sharpslatesports.com/): Today's featured props in every live sport, with hit rates and best prices.
+- [How these numbers work](https://sharpslatesports.com/methodology/): How SharpSlate turns sportsbook prices into fair odds, and where the hit rates, projections and defense ranks come from.
+- [Terms of use](https://sharpslatesports.com/terms/): The terms for using SharpSlate: free research for personal use, not advice, and no copying or scraping of the site's content or data.
+- [Privacy](https://sharpslatesports.com/privacy/): What SharpSlate collects: no accounts, forms or cookies of ours, only anonymous page view counts. What your browser loads from other services.
